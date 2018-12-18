@@ -1,0 +1,15 @@
+<?php
+/*
+ * @file
+ * code for newsletter module
+*/
+
+function newsletter_mail($key, &$message, $params) {
+  if (($key == 'send_mail')) {
+    $message['from'] = 'lahernandez15043@gmail.com';
+    $message['body'] = "Esto es un mensaje de ejemplo";
+    $message['subject'] = "Subscripcion ariadna";
+  }
+}
+
+?>
